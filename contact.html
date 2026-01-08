@@ -85,7 +85,8 @@
             border-radius: 8px;
             border-bottom: 4px solid var(--accent);
             transition: transform 0.3s;
-            height: fit-content; /* Ensures cards only take up needed space */
+            height: fit-content;
+            /* Ensures cards only take up needed space */
         }
 
         .menu-card:hover {
@@ -124,9 +125,18 @@
 
         /* --- MOBILE RESPONSIVE --- */
         @media (max-width: 768px) {
-            nav { flex-direction: column; }
-            .grid { grid-template-columns: 1fr; }
-            .nav-links { margin-top: 10px; gap: 1rem; }
+            nav {
+                flex-direction: column;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                margin-top: 10px;
+                gap: 1rem;
+            }
         }
 
         footer {
@@ -151,43 +161,93 @@
         </ul>
     </nav>
 
-    <main class="container">
-        <h2 style="text-align: center; color: var(--primary); font-size: 2.5rem;">Our Menu</h2>
+    <style>
+        /* New styles specifically for the Contact Placard */
+        .contact-placard {
+            max-width: 500px;
+            margin: 40px auto;
+            background: var(--light-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 6px solid var(--primary);
+            /* Burgundy accent on the side */
+            border-bottom: 4px solid var(--accent);
+            /* Gold accent on the bottom */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
 
-        <div class="grid">
-            <div class="menu-card">
-                <div class="menu-header">
-                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 1" class="menu-img">
-                    <h3>Item 1</h3>
-                </div>
-                <p class="menu-description">Item Description</p>
-            </div>
+        .contact-placard h2 {
+            color: var(--primary);
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+            letter-spacing: 1px;
+        }
 
-            <div class="menu-card">
-                <div class="menu-header">
-                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 2" class="menu-img">
-                    <h3>Item 2</h3>
-                </div>
-                <p class="menu-description">Item Description</p>
-            </div>
+        .contact-info {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
 
-            <div class="menu-card">
-                <div class="menu-header">
-                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 3" class="menu-img">
-                    <h3>Item 3</h3>
-                </div>
-                <p class="menu-description">Item Description</p>
-            </div>
+        .contact-info li {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
 
-            <div class="menu-card">
-                <div class="menu-header">
-                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 4" class="menu-img">
-                    <h3>Item 4</h3>
-                </div>
-                <p class="menu-description">Item Description</p>
-            </div>
+        .contact-info strong {
+            color: var(--primary);
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+    </style>
+
+    <div class="contact-placard">
+        <h2>Visit Us</h2>
+
+        <ul class="contact-info">
+            <li>
+                <strong>Phone</strong>
+                (626) 672-0250
+            </li>
+            <li>
+                <strong>Email</strong>
+                email@email.com
+            </li>
+            <li>
+                <strong>Address</strong>
+                1721 Durfee Ave, South El Monte, CA 91733
+            </li>
+        </ul>
+
+        <div class="social-links">
+            <strong>Follow the Flavor</strong><br><br>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
         </div>
-    </main>
+    </div>
 
     <footer>
         &copy; A Huevo Que Si. All rights reserved.

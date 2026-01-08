@@ -85,7 +85,8 @@
             border-radius: 8px;
             border-bottom: 4px solid var(--accent);
             transition: transform 0.3s;
-            height: fit-content; /* Ensures cards only take up needed space */
+            height: fit-content;
+            /* Ensures cards only take up needed space */
         }
 
         .menu-card:hover {
@@ -124,9 +125,18 @@
 
         /* --- MOBILE RESPONSIVE --- */
         @media (max-width: 768px) {
-            nav { flex-direction: column; }
-            .grid { grid-template-columns: 1fr; }
-            .nav-links { margin-top: 10px; gap: 1rem; }
+            nav {
+                flex-direction: column;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                margin-top: 10px;
+                gap: 1rem;
+            }
         }
 
         footer {
@@ -151,43 +161,7 @@
         </ul>
     </nav>
 
-    <main class="container">
-        <h2 style="text-align: center; color: var(--primary); font-size: 2.5rem;">Our Menu</h2>
-
-        <div class="grid">
-            <div class="menu-card">
-                <div class="menu-header">
-                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 1" class="menu-img">
-                    <h3>Item 1</h3>
-                </div>
-                <p class="menu-description">Item Description</p>
-            </div>
-
-            <div class="menu-card">
-                <div class="menu-header">
-                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 2" class="menu-img">
-                    <h3>Item 2</h3>
-                </div>
-                <p class="menu-description">Item Description</p>
-            </div>
-
-            <div class="menu-card">
-                <div class="menu-header">
-                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 3" class="menu-img">
-                    <h3>Item 3</h3>
-                </div>
-                <p class="menu-description">Item Description</p>
-            </div>
-
-            <div class="menu-card">
-                <div class="menu-header">
-                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 4" class="menu-img">
-                    <h3>Item 4</h3>
-                </div>
-                <p class="menu-description">Item Description</p>
-            </div>
-        </div>
-    </main>
+    <h1>If desired, will add in</h1>
 
     <footer>
         &copy; A Huevo Que Si. All rights reserved.
