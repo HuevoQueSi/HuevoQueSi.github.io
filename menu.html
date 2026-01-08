@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Huevo Que Si | Versatile Mexican Breakfast</title>
+    <link rel="icon" type="image/png" href="pngtree-fried-egg-icon-png-image_4230286.png">
+
+    <style>
+        :root {
+            --primary: #8b0000;
+            --accent: #d4af37;
+            --dark: #1a1a1a;
+            --light-bg: #fffbf5;
+            --text: #374151;
+        }
+
+        body {
+            font-family: 'Garamond', serif;
+            margin: 0;
+            line-height: 1.4;
+            color: var(--text);
+            background-color: white;
+        }
+
+        /* --- NAVIGATION --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 10%;
+            border-bottom: 1px solid #eee;
+            background-color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* --- MENU SECTION --- */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .menu-card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-bottom: 4px solid var(--accent);
+            transition: transform 0.3s;
+            height: fit-content; /* Ensures cards only take up needed space */
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .menu-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+        }
+
+        .menu-card h3 {
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin: 0;
+        }
+
+        .menu-description {
+            font-style: italic;
+            color: #555;
+            font-size: 1.1rem;
+            border-top: 1px solid #eee;
+            padding-top: 0.8rem;
+            margin: 0;
+        }
+
+        /* --- MOBILE RESPONSIVE --- */
+        @media (max-width: 768px) {
+            nav { flex-direction: column; }
+            .grid { grid-template-columns: 1fr; }
+            .nav-links { margin-top: 10px; gap: 1rem; }
+        }
+
+        footer {
+            padding: 50px;
+            text-align: center;
+            background: var(--dark);
+            color: #9ca3af;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo-text">A HUEVO QUE SI</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2 style="text-align: center; color: var(--primary); font-size: 2.5rem;">Our Menu</h2>
+
+        <div class="grid">
+            <div class="menu-card">
+                <div class="menu-header">
+                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 1" class="menu-img">
+                    <h3>Item 1</h3>
+                </div>
+                <p class="menu-description">Item Description</p>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-header">
+                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 2" class="menu-img">
+                    <h3>Item 2</h3>
+                </div>
+                <p class="menu-description">Item Description</p>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-header">
+                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 3" class="menu-img">
+                    <h3>Item 3</h3>
+                </div>
+                <p class="menu-description">Item Description</p>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-header">
+                    <img src="Gemini_Generated_Image_5ljo4g5ljo4g5ljo.png" alt="Item 4" class="menu-img">
+                    <h3>Item 4</h3>
+                </div>
+                <p class="menu-description">Item Description</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; A Huevo Que Si. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
